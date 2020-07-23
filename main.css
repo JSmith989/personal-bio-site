@@ -1,0 +1,32 @@
+
+/* color palette
+option 1: #742e12 - #d28a2d - #bfbda2 - #2f6c68
+
+option 2: #924431 - #cfc4b6 - #83aea7 - #574634
+*/
+
+body {
+    background-color: #83aea7  ;
+}
+
+.name__container {
+    display: inline-block;
+    margin: 25px auto 40px;
+  }
+
+.name-header {
+    font-family: 'Six Caps', sans-serif;
+    font-size: 70px;
+    padding: 5px;
+    letter-spacing: 10px;
+    line-height: 1;
+    margin: 0;
+    position: relative;
+    color: #cfc4b6;
+    background-color: #574634;
+    text-shadow: 3px 3px #924431;
+}
+
+
+  
+  
