@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /* color palette
 option 1: #742e12 - #d28a2d - #bfbda2 - #2f6c68
 
@@ -46,4 +51,33 @@ body {
 li a {
     text-decoration: none;
     color: #574634;
+}
+
+.my-background {
+    border: 3px #cfc4b6 solid;
+    letter-spacing: .5px;
+    color: #cfc4b6;
+    width: 500px;
+    padding: 8px;
+    margin: 20px;
+    text-align: center;
+    background-color: #924431;
+}
+
+.my-development {
+  border: 3px #cfc4b6 solid;
+  letter-spacing: .5px;
+  color: #cfc4b6;
+  width: 500px;
+  padding: 8px;
+  margin: 20px;
+  text-align: center;
+  background-color: #924431;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-bottom: auto;
 }
