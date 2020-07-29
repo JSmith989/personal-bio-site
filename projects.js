@@ -1,7 +1,7 @@
 const projects = [
     {
         title: "Cool Project", 
-        screenshot: "http://gotoflashgames.com/files/file/033.jpg", 
+        screenshot: "/images/IMG_1122.jpg", 
         description: "This is the best project", // A good project description includes 'the what', 'the why', and 'the how'.
         technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
         available: true,
@@ -10,7 +10,7 @@ const projects = [
       },
       {
         title: "Cool Project", 
-        screenshot: "http://gotoflashgames.com/files/file/033.jpg", 
+        screenshot: "/images/IMG_1122.jpg", 
         description: "This is the best project", // A good project description includes 'the what', 'the why', and 'the how'.
         technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
         available: true,
@@ -19,7 +19,7 @@ const projects = [
       },
       {
         title: "Cool Project", 
-        screenshot: "http://gotoflashgames.com/files/file/033.jpg", 
+        screenshot: "/images/IMG_1122.jpg", 
         description: "This is the best project", // A good project description includes 'the what', 'the why', and 'the how'.
         technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
         available: true,
@@ -28,7 +28,7 @@ const projects = [
       },
       {
         title: "Cool Project", 
-        screenshot: "http://gotoflashgames.com/files/file/033.jpg", 
+        screenshot: "/images/IMG_1122.jpg", 
         description: "This is the best project", // A good project description includes 'the what', 'the why', and 'the how'.
         technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
         available: true,
@@ -37,7 +37,7 @@ const projects = [
       },
       {
         title: "Cool Project", 
-        screenshot: "http://gotoflashgames.com/files/file/033.jpg", 
+        screenshot: "/images/IMG_1122.jpg", 
         description: "This is the best project", // A good project description includes 'the what', 'the why', and 'the how'.
         technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
         available: true,
@@ -46,7 +46,7 @@ const projects = [
       },
       {
         title: "Cool Project", 
-        screenshot: "http://gotoflashgames.com/files/file/033.jpg", 
+        screenshot: "/images/IMG_1122.jpg", 
         description: "This is the best project", // A good project description includes 'the what', 'the why', and 'the how'.
         technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
         available: true,
@@ -55,7 +55,7 @@ const projects = [
       },
       {
         title: "Cool Project", 
-        screenshot: "http://gotoflashgames.com/files/file/033.jpg", 
+        screenshot: "/images/IMG_1122.jpg", 
         description: "This is the best project", // A good project description includes 'the what', 'the why', and 'the how'.
         technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
         available: false,
@@ -76,12 +76,12 @@ const printToDom = (divID, textToPrint) => {
     for(let i=0; i < projects.length; i++){
         if (projects[i].available === true) {
         domString += `<div class="projects-page">`
-        domString +=      `<h2>${projects[i].title}</h2>`
-        domString +=      `<img src= ${projects[i].screenshot} alt="screenshot"/>`
+        domString +=      `<h2 class="title-project">${projects[i].title}</h2>`
+        domString +=      `<img src= ${projects[i].screenshot} alt="screenshot" class="fireworks"/>`
         domString +=    `<p> ${projects[i].description}</p>`
         domString +=    `<p> ${projects[i].technologiesUsed}`
-        domString +=    `<p> ${projects[i].url} </p>`
-        domString +=    `<p> ${projects[i].githubUrl} </p>`
+        domString +=    `<p><a href=${projects[i].url}> Project Website</a></p>`
+        domString +=    `<p><a href=${projects[i].githubUrl}>GitHub</a></p>`
         domString += `</div>`
         }
     }    
