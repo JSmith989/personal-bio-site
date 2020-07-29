@@ -109,3 +109,17 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.photo-class {
+  width: 600px;
+}
+
+.photography {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.photo-page {
+    padding: 30px;
+}
