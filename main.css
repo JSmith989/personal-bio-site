@@ -123,3 +123,10 @@ footer {
 .photo-page {
     padding: 30px;
 }
+
+.my-face {
+  width: 300px;
+  border-radius: 100px;
+  padding: 20px;
+}
+
